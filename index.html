@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <header>
+        <div class="logo">
+            <img src="pokeapi.png">
+        </div>
+    </header>
+
+    <main>
+        <select id="limit" class="btn">
+            <option value="5">5</option>
+            <option value="10">10</option>
+            <option value="15">15</option>
+            <option value="20" selected>20</option>
+        </select>
+
+        <div id="result"></div>
+
+        <nav id="nav">
+            <button onclick="prev()" id="prev" class="btn">&lt;Prev</button>  
+            <select id="pages"></select>
+            <button onclick="next()" id="next" class="btn">Next&gt;</button>
+        </nav> 
+    </main>
+
+
+    <script src="script.js"></script>
+</body>
+</html>
